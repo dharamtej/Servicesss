@@ -1,0 +1,33 @@
+<input type="submit" (click)="Clik()">
+<div *ngIf="!hasError">
+<table border="1">
+    <thead>
+        <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Topic</th>
+    <th>Phone</th>
+ 
+</tr>
+</thead>
+
+   
+    <tbody>
+        <tr *ngFor="let emp of   employess">
+            <td>
+                {{emp.name}}
+            </td>
+            <td>
+                {{emp.email}}
+            </td>
+            <td>
+                {{emp.topic}}
+            </td>
+            <td>
+                {{emp.phone}}
+            </td>
+           
+        </tr>
+    </tbody>
+</table>
+</div>

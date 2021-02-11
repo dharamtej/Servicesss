@@ -1,0 +1,19 @@
+<p>api-call works!</p>
+<table border="1">
+    <thead>
+        <th>Date</th>
+       
+        <th>temperatureC</th>
+        <th>temperatureF</th>
+        <th>summary</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let weather of Weather">
+            <td>{{weather.date}}</td>
+          
+            <td>{{weather.temperatureC}}</td>
+            <td>{{weather.temperatureF}}</td>
+            <td>{{weather.summary}}</td>
+        </tr>
+    </tbody>
+</table>
